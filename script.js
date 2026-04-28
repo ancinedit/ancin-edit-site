@@ -99,7 +99,13 @@ if (contactForm) {
   if (!a) return;
   if (!isInternalLink(a)) return;
 
+  e.preventDefault();
+
   document.body.classList.add("is-leaving");
+
+  setTimeout(() => {
+    window.location.href = a.href;
+  }, 140);
 });
 
 })();
