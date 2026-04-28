@@ -2,10 +2,7 @@
   let currentIndex = 0;
   let images = [];
 
-  window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      document.body.classList.add("is-loaded");
-    }, 250);
+ window.addEventListener("DOMContentLoaded", () => {
     
     const contactForm = document.getElementById("contactForm");
 
