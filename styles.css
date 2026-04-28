@@ -26,12 +26,8 @@ body{
    Page fade transitions
 ========= */
 body{
-  opacity: 0;
-  transition: opacity 550ms ease-in-out;
-}
-
-body.is-loaded{
   opacity: 1;
+  transition: opacity 220ms ease;
 }
 
 body.is-leaving{
