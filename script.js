@@ -98,16 +98,11 @@ if (contactForm) {
   };
 
   document.addEventListener("click", (e) => {
-    const a = e.target.closest("a");
-    if (!a) return;
-    if (!isInternalLink(a)) return;
+  const a = e.target.closest("a");
+  if (!a) return;
+  if (!isInternalLink(a)) return;
 
-    e.preventDefault();
-    const href = a.getAttribute("href");
+  document.body.classList.add("is-leaving");
+});
 
-    document.body.classList.add("is-leaving");
-    setTimeout(() => {
-      window.location.href = href;
-    }, 360);
-  });
 })();
