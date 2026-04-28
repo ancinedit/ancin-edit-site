@@ -22,7 +22,7 @@ body{
   line-height:1.6;
 }
 
-/* =========
+//* =========
    Page fade transitions
 ========= */
 body{
@@ -34,14 +34,9 @@ body.is-loaded{
   opacity: 1;
 }
 
-body.is-leaving{
-  opacity: 0;
-}
-
 @media (prefers-reduced-motion: reduce){
   body{ transition:none; opacity:1; }
-  body.is-loaded,
-  body.is-leaving{ opacity:1; }
+  body.is-loaded{ opacity:1; }
 }
 
 /* =========
