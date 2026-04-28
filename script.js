@@ -2,7 +2,10 @@
   let currentIndex = 0;
   let images = [];
 
- window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
+  requestAnimationFrame(() => {
+    document.body.classList.add("is-loaded");
+  });
     
     const contactForm = document.getElementById("contactForm");
 
@@ -105,7 +108,7 @@ if (contactForm) {
 
   setTimeout(() => {
     window.location.href = a.href;
-  }, 140);
+  }, 220);
 });
 
 })();
