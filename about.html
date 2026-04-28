@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>About | Ancín Edit</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.founder-layout{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 34px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.founder-photo-wrap{
+  width: 100%;
+}
+
+.founder-photo{
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+}
+
+.founder-text{
+  max-width: 820px;
+}
+
+.founder-text p{
+  color: var(--muted);
+  margin: 0 0 22px 0;
+  line-height: 1.75;
+}
+
+.founder-text p:last-child{
+  margin-bottom: 0;
+}
+
+.mission-section{
+  margin-top: 40px;
+}
+
+.mission-card h3{
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.mission-card p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 1100px){
+  .founder-layout{
+    grid-template-columns: 360px 1fr;
+    gap: 28px;
+  }
+
+  .founder-photo{
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 900px){
+  .founder-layout{
+    grid-template-columns: 1fr;
+  }
+
+  .founder-photo{
+    max-width: 100%;
+  }
+
+  .founder-text{
+    max-width: 100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ancín Edit Home">
+      <img src="images/ancin-edit-logo.svg" alt="Ancín Edit logo">
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="contact.html#book">Free Consultation</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <h1 class="h1" style="margin-top:10px;">Meet the founder</h1>
+
+<div class="founder-layout">
+
+  <img
+    class="founder-photo"
+    src="images/Tezza-4667.jpeg"
+    alt="Portrait of Justine"
+  >
+
+  <div class="founder-text">
+  <p>Hey, I'm Justine —</p>
+
+  <p>
+    My path to wedding planning began in an unexpected place: at my desk in the New York City fashion industry, where I found myself planning and designing my own wedding mood boards between managing spreadsheets. The joy I discovered in that process gave me the clarity and courage to pursue the work that truly lights me up. Today, I blend calm, intentional execution with an editorial eye to create celebrations that feel as seamless as they are beautiful.
+  </p>
+
+  <p>
+    Before transitioning to weddings, I spent nearly a decade in fashion managing multi-million-dollar accounts and merchandising large-scale tradeshows across the country. That background is my secret weapon - shaping my approach to organization, vendor management, complex budgeting, and steady problem-solving under pressure.
+  </p>
+
+  <p>
+    Since then, I've planned and coordinated countless celebrations - from weddings to bridal showers and bachelorette parties. I now work in the wedding world every day - from tastings to timelines, vision boards to vendor bookings, rehearsal to day-of helping couples bring their ideas to life, including being a full-time day of coordinator at the venue where my own wedding took place, making the experience especially full-circle.
+  </p>
+
+  <p>
+    One of the things I love most about wedding planning is the collaboration. I work alongside incredibly talented creatives - florists, photographers, musicians, and beyond - blending fashion, creativity, and storytelling into one cohesive experience. Creating has always been at the center of my life, and I believe weddings should reflect the unique story, style, and energy of each couple, filled with joy, ease, love, and beauty.
+  </p>
+
+  <p>
+    My goal is to take the stress off your shoulders and turn your vision into a celebration you'll remember forever. Whether it's full planning, partial planning, or day-of coordination, I'll handle the details so you can stay present and enjoy every moment.
+  </p>
+
+  <p>
+    I can't wait to create something unforgettable together.
+  </p>
+</div>
+
+</div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © <span id="y"></span> Ancín Edit
+  </div>
+</footer>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

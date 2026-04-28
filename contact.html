@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Ancín Edit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Ancín Edit Home">
+      <img src="images/ancin-edit-logo.svg" alt="Ancín Edit logo">
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn primary" href="#contact-form">Free Consultation</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Contact</div>
+      <h1 class="h1" style="margin-top:10px;">Request pricing or schedule a free consultation</h1>
+      <p class="subhead">Fill out the form and we’ll follow up soon.</p>
+      <div id="contact-form" class="card" style="margin-top:18px;">
+        <form id="contactForm" class="form" action="https://formspree.io/f/mzdyoadv" method="POST">
+          <input type="hidden" name="_next" value="https://ancinedit.com/thank-you.html">
+          <div class="field">
+            <label for="first">First name</label>
+            <input id="first" name="firstName" type="text" required />
+          </div>
+          <div class="field">
+            <label for="last">Last name</label>
+            <input id="last" name="lastName" type="text" required />
+          </div>
+          <div class="field full">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field full">
+            <label for="date">Wedding date & location</label>
+            <input id="date" name="weddingDateLocation" type="text" placeholder="MM/DD/YYYY — City, State" />
+          </div>
+          <div class="field full">
+            <label for="service">What are you looking for?</label>
+            <select id="service" name="serviceType">
+              <option>Full Planning</option>
+              <option>Partial Planning</option>
+              <option>Coordination</option>
+              <option>Bridal Party Proposals</option>
+              <option>Bridal Shower</option>
+              <option>Rehearsal Dinner</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="msg">A little about you & your vision</label>
+            <textarea id="msg" name="message"></textarea>
+          </div>
+          <div class="full" style="display:flex; gap:10px; align-items:center; justify-content:flex-start; flex-wrap:wrap;">
+            <button class="btn primary" type="submit">Submit Request</button>
+            <span class="note">We’ll be in touch soon.</span>
+          </div>
+        </form>
+      </div>
+      <!--
+Future Calendly section:
+If Ancín Edit adds online booking later, place the Calendly inline embed here.
+
+Example:
+<div id="book" class="section" style="padding-bottom:0;">
+  <div class="eyebrow">Free consultation</div>
+  <h2 style="margin:10px 0 10px;">Book a time that works for you</h2>
+
+  <div class="card">
+    Calendly embed code goes here.
+  </div>
+</div>
+-->
+</div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Ancín Edit</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
