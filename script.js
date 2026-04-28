@@ -97,18 +97,6 @@ if (contactForm) {
     return true;
   };
 
-  document.addEventListener("click", (e) => {
-  const a = e.target.closest("a");
-  if (!a) return;
-  if (!isInternalLink(a)) return;
-
-  e.preventDefault();
-
-  document.body.classList.add("is-leaving");
-
-  setTimeout(() => {
-    window.location.href = a.href;
-  }, 220);
 });
 
 })();
