@@ -592,7 +592,7 @@ a:hover{ opacity:0.85; }
 .hero-image-overlay{
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.18);
+  background:rgba(0,0,0,0.34);
   z-index:1;
 }
 
@@ -613,6 +613,7 @@ a:hover{ opacity:0.85; }
   max-width:1100px;
 
   color:#fff;
+  text-shadow:0 2px 18px rgba(0,0,0,0.28);
   font-size:clamp(42px, 6vw, 92px);
   line-height:0.95;
   font-weight:300;
