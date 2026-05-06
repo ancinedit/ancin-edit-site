@@ -656,6 +656,24 @@ a:hover{ opacity:0.85; }
 
 @media (max-width: 860px){
 
+  .hero-image{
+  height:72vh;
+  min-height:520px;
+}
+
+  .hero-overlay-text{
+  padding:24px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+  .hero-overlay-text h1{
+  font-size:clamp(42px, 11vw, 64px);
+  line-height:1;
+  max-width:100%;
+}
+   
   .site-header{
     z-index:999;
   }
