@@ -408,6 +408,8 @@ a:hover{ opacity:0.85; }
 
 .founder-text{
   max-width:420px;
+  max-height:620px;
+  overflow:hidden;
 }
 
 .founder-text p{
@@ -548,6 +550,12 @@ a:hover{ opacity:0.85; }
 }
 
 @media (max-width: 860px){
+   
+   .founder-text{
+  max-height:none;
+  overflow:visible;
+}
+   
   .hero-grid{ grid-template-columns:1fr; }
   .grid-3{ grid-template-columns:1fr; }
   .gallery{ grid-template-columns:1fr 1fr; }
