@@ -582,6 +582,11 @@ a:hover{ opacity:0.85; }
   background:#000;
 }
 
+.welcome-copy .subhead{
+  font-size:17px;
+  line-height:1.9;
+}
+
 .hero-image img{
   width:100%;
   height:100%;
