@@ -661,14 +661,14 @@ a:hover{ opacity:0.85; }
   min-height:520px;
 }
 
-  .hero-overlay-text{
+  .hero-image-content{
   padding:24px;
   justify-content:center;
   align-items:center;
   text-align:center;
 }
 
-  .hero-overlay-text h1{
+  .hero-image-content h1{
   font-size:clamp(42px, 11vw, 64px);
   line-height:1;
   max-width:100%;
