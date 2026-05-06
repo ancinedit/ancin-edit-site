@@ -560,94 +560,144 @@ a:hover{ opacity:0.85; }
    Mobile Menu + Mobile Layout
 ========= */
 .menu-toggle{
-  display:none !important;
-  align-items:center;
-  justify-content:center;
-  margin-left:auto;
-  width:42px;
-  height:42px;
-  border:1px solid var(--border);
-  border-radius:999px;
-  background:transparent;
-  color:var(--text);
-  font:inherit;
-  font-size:22px;
-  line-height:1;
-  cursor:pointer;
-}
-
-@media (min-width: 861px){
-  .menu-toggle{
-    display:none !important;
-  }
+  display:none;
 }
 
 @media (max-width: 860px){
 
-  .menu-toggle{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:56px;
-    height:56px;
-    border-radius:50%;
-    border:1px solid var(--border);
-    background:transparent;
-    color:var(--text);
-    font-size:28px;
-    cursor:pointer;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .nav-links.open{
-    display:flex;
-    flex-direction:column;
-    position:absolute;
-    top:92px;
-    left:16px;
-    right:16px;
-    background:rgba(251,247,238,0.98);
-    border:1px solid var(--border);
-    border-radius:28px;
-    padding:18px 28px;
-    gap:0;
+  .site-header{
     z-index:999;
   }
 
-  .nav-links.open a{
-    display:block;
-    padding:18px 0;
-    border-bottom:1px solid var(--border);
-    color:var(--text) !important;
-    text-decoration:none !important;
-    font-size:22px;
+  .nav{
+    position:relative;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
   }
 
-  .nav-links.open a:last-child{
-    border-bottom:none;
-  }
-
-  .nav-links.open a:visited,
-  .nav-links.open a:hover,
-  .nav-links.open a:active,
-  .nav-links.open a:focus{
-    color:var(--text) !important;
-    text-decoration:none !important;
-  }
-
+  .brand,
   .nav-cta{
-    display:none;
+    flex:0 0 auto;
   }
 
   .brand img{
     height:92px;
   }
 
-  .nav{
-    justify-content:space-between;
+  .nav-cta{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    flex-direction:column;
     align-items:center;
+    justify-content:center;
+    gap:5px;
+    width:52px;
+    height:52px;
+    margin-left:auto;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:rgba(251,247,238,0.55);
+    color:var(--text);
+    cursor:pointer;
+  }
+
+  .menu-toggle span{
+    width:20px;
+    height:1px;
+    background:var(--text);
+    display:block;
+    transition:transform 220ms ease, opacity 220ms ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){
+    transform:translateY(6px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){
+    opacity:0;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){
+    transform:translateY(-6px) rotate(-45deg);
+  }
+
+  .nav-links{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    margin-top:12px;
+    background:rgba(251,247,238,0.98);
+    backdrop-filter:blur(12px);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:12px 24px;
+    gap:0;
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(-8px);
+    transition:opacity 220ms ease, transform 220ms ease;
+    z-index:999;
+  }
+
+  .nav-links.open{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+  }
+
+  .nav-links a{
+    display:block;
+    padding:17px 0;
+    border-bottom:1px solid var(--border);
+    color:var(--text) !important;
+    text-decoration:none !important;
+    font-size:22px;
+  }
+
+  .nav-links a:last-child{
+    border-bottom:none;
+  }
+
+  .nav-links a.active{
+    color:var(--accent) !important;
+    border-color:var(--border);
+  }
+
+  .hero{
+    padding-top:46px;
+  }
+
+  .section{
+    padding:54px 0;
+  }
+
+  .container{
+    width:min(1100px, calc(100% - 34px));
+  }
+
+  .h1{
+    font-size:clamp(30px, 10vw, 42px);
+    white-space:normal !important;
+  }
+
+  .subhead{
+    font-size:15px;
+  }
+
+  .grid-3,
+  .reviews,
+  .form{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
   }
 }
