@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work | Ancin Edit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      <img src="images/ancin-edit-logo.svg" alt="Ancín Edit logo">
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn primary" href="contact.html#book">
+        Free Consultation
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="eyebrow">Work</div>
+
+      <h1 class="h1">
+        A glimpse into the details
+      </h1>
+
+      <p class="subhead">
+        A curated look at past celebrations.
+      </p>
+
+<div class="album-grid">
+
+  <a class="album-card" href="jeff-britt.html">
+    <div class="album-image">
+      <img src="images/jeff-britt/cover.jpg" alt="Jeff & Britt Wedding">
+    </div>
+    <div class="album-title">JEFF &amp; BRITT</div>
+  </a>
+
+  <a class="album-card" href="ben-emily.html">
+    <div class="album-image">
+      <img src="images/ben-emily/cover.jpg" alt="Ben & Emily Wedding">
+    </div>
+    <div class="album-title">BEN &amp; EMILY</div>
+  </a>
+
+<a class="album-card" href="#">
+  <div class="album-image coming-soon">
+    <div class="coming-soon-text">COMING SOON</div>
+  </div>
+  <div class="album-title">ALEX &amp; TERI</div>
+</a>
+
+</div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © <span id="y"></span> Ancin Edit
+  </div>
+</footer>
+
+<script>
+document.getElementById("y").textContent =
+  new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
